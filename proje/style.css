@@ -1,0 +1,197 @@
+body{
+   
+    background-image: url("./backgraund.jpg");
+    
+}
+.message-row{
+    margin: 0!important;
+    background-color: #f2f2f2;
+    border-radius: 19px 19px 0 0 ;  
+}
+
+.massage-box{
+   height: 430px;
+    width: 376px;
+    background-color: #ffff;
+    position: fixed;
+    bottom: 100px;
+    right: 40px;
+    border-radius: 4%;
+    padding: 0!important;
+    
+}
+
+.user-image{
+    height: 65px;
+    width: 65px;
+    background-image: url("./user.jpg");
+    background-size: cover;
+    border-radius: 100%;
+    position: relative;
+    margin: 30px auto ;
+}
+.user-image::before{
+    content: "";
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-color: green;
+    border-radius: 100%;
+    border: 2px solid #f2f2f2;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.user-name-style,
+.user-task,
+.user-institution{
+margin: 0;
+}
+.user-name-style{
+    font-weight: 700;
+}
+.user-task,.user-institution{
+    font-weight: 500;
+}
+.user-name{
+    padding-top: 25px;
+}
+.user-chat-image{
+    background-image: url(./user.jpg);
+    background-size: cover;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+}
+.user-chat-box{
+    height: 90px;
+    width: 190px;
+    background-color: #f2f2f2;
+    border-radius: 0 13px 13px 13px;
+    padding: 10px;
+}
+.clock{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(185, 185, 185);
+}
+.contact h5{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+.contact-box1,
+.contact-box2,
+.contact-box3{
+    text-align: center;
+    padding:15px ;
+    border-radius: 10%;
+    color: white;
+    font-size: 20px;
+    
+
+}
+.contact-box1{
+    background-color: #41d251;
+    
+}
+.contact-box2{
+    background-color: #046ec4;
+}
+.contact-box3{
+    background-color: #6232b1;
+}
+.box-padding{
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.chat-button{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    background-color: white;
+    position: fixed;
+    bottom: 10px;
+    right: 40px;
+    font-size: 40px;
+   /* padding: 10px 20px;*/
+    
+}
+.chat-button .fas{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    
+}
+.chat-button:hover{
+background-color: #f2f2f2;
+}
+.button-imlec{
+    position: absolute;
+    display: list-item;
+    height: 14px;
+    width: 14px;
+    border-radius: 100%;
+    color: red;
+    right: -33px;
+    top: -20px;
+}
+.massage-box.container {
+    position:absolute;
+}
+.icon-close{
+    position: absolute;
+    height: 30px;
+    font-size: 18px;
+    color: gray;
+    top: 20px;
+    right: 20px;
+    z-index: 9;
+    border:0;
+    background-color: transparent;
+}
+button.icon-close:hover{
+    color: #000;
+}
+.close{
+   display: none;
+}
+.open{
+    display: block;
+    
+}
+.contact-box1:hover{
+    background-color: green;
+}
+.contact-box2:hover{
+    background-color: blue;
+}
+.contact-box3:hover{
+    background-color: purple;
+}
+
+@media screen and (max-width:900px) {
+
+
+.massage-box{width:300px;}
+.user-chat-box{margin-left: 20px;}
+.user-name,.user-name-style{font-size: 15px;}
+.user-name{margin-left: 15px;margin-top: 5px;}   
+    
+}
+@media screen and (min-width:900px) {
+
+
+    .icon-close{top:10px}  
+        
+    }
+@media screen and (max-width:360px) {
+
+
+    .massage-box{width:240px;}
+    .user-chat-box{margin-left: 20px;width: 140px; font-size: 12px;font-weight: 600;}
+    .user-name,.user-name-style{font-size: 11px;}
+    .user-name{margin-left: 25px;margin-top: 10px;}   
+        
+    }
